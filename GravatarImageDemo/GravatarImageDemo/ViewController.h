@@ -1,0 +1,14 @@
+//
+//  ViewController.h
+//  GravatarImageDemo
+//
+//  Created by Rex Finn on 12/10/13.
+//  Copyright (c) 2013 Rex Finn. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "UIImageView+Gravatar.h"
+
+@interface ViewController : UIViewController
+
+@end
