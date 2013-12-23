@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CommonCrypto/CommonDigest.h>
-#import "UIImageView+WebCache.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 // Rating of Gravatar
 
