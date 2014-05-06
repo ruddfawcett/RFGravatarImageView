@@ -13,7 +13,7 @@ A simple and quickly put together UIImageView subclass for dealing with http://g
 
 ```ruby
 platform :ios, '7.0'
-pod "UIImageView+Gravatar", "~> 1.0"
+pod "UIImageView-Gravatar", "~> 1.0"
 ```
 
 ### Installation without CocoaPods
