@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.name         = "UIImageView+Gravatar"
   s.version      = "1.0"
   s.summary      = "A simple and quickly put together UIImageView subclass for dealing with http://gravatar.com images."
-  s.homepage     = "https://github.com/foozmeat/UIImageView-Gravatar"
+  s.homepage     = "https://github.com/ruddfawcett/RFGravatarImageView"
   s.license      = 'MIT'
   s.author       = { "Rudd Fawcett" => "rudd.fawcett@gmail.com" }
 
