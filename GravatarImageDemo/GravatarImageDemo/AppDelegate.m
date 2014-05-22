@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  GravatarImageDemo
 //
-//  Created by Rex Finn on 12/10/13.
-//  Copyright (c) 2013 Rex Finn. All rights reserved.
+//  Created by Rudd Fawcett on 12/10/13.
+//  Copyright (c) 2013 Rudd Fawcett. All rights reserved.
 //
 
 #import "AppDelegate.h"

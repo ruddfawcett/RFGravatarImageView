@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary      = "A simple and quickly put together UIImageView subclass for dealing with http://gravatar.com images."
   s.homepage     = "https://github.com/foozmeat/UIImageView-Gravatar"
   s.license      = 'MIT'
-  s.author       = { "Rex Finn" => "rexcfinn@gmail.com" }
+  s.author       = { "Rudd Fawcett" => "rudd.fawcett@gmail.com" }
 
   s.platform     = :ios, '7.0'
   s.source       = { :git => "https://github.com/rexfinn/UIImageView-Gravatar.git", :tag => "v1.0" }
