@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author       = { "Rudd Fawcett" => "rudd.fawcett@gmail.com" }
 
   s.platform     = :ios, '7.0'
-  s.source       = { :git => "https://github.com/rexfinn/UIImageView-Gravatar.git", :tag => "v1.0" }
+  s.source       = { :git => "https://github.com/ruddfawcett/UIImageView-Gravatar.git", :tag => "v1.0" }
   s.source_files  = 'UIImageView+Gravatar', 'UIImageView+Gravatar/**/*.{h,m}'
   s.dependency 'SDWebImage', '~> 3.5'
   s.framework = 'UIKit'
