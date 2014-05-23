@@ -10,4 +10,5 @@ Pod::Spec.new do |s|
   s.source_files  = 'RFGravatarImageView', 'RFGravatarImageView/**/*.{h,m}'
   s.dependency 'SDWebImage', '~> 3.5'
   s.framework = 'UIKit'
+  s.requires_arc = true
 end
