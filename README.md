@@ -5,7 +5,7 @@ A simple UIImageView subclass for dealing with http://gravatar.com images.
 
 ##Installation
 
-### Installation with CocoaPods (hasn't been added yet)
+### Installation with CocoaPods
 
 [CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like RFGravatarImageView in your projects.
 
