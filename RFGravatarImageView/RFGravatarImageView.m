@@ -1,17 +1,17 @@
 //
-//  UIImageView+Gravatar.m
+//  RFGravatarImageView.m
 //
 //  Created by Rudd Fawcett on 12/10/13.
 //  Copyright (c) 2013 Rudd Fawcett. All rights reserved.
 //
 
-#import "UIImageView+Gravatar.h"
+#import "RFGravatarImageView.h"
 
-@interface UIImageView_Gravatar ()
+@interface RFGravatarImageView ()
 
 @end
 
-@implementation UIImageView_Gravatar
+@implementation RFGravatarImageView
 
 - (id)initWithFrame:(CGRect)frame
 {

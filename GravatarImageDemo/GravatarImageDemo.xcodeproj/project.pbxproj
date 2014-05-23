@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE458F8A193011C300CE013A /* RFGravatarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE458F89193011C300CE013A /* RFGravatarImageView.m */; };
 		CE9FF13418575AEB0043592B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FF13318575AEB0043592B /* Foundation.framework */; };
 		CE9FF13618575AEB0043592B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FF13518575AEB0043592B /* CoreGraphics.framework */; };
 		CE9FF13818575AEB0043592B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FF13718575AEB0043592B /* UIKit.framework */; };
@@ -20,7 +21,6 @@
 		CE9FF15518575AEB0043592B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FF13718575AEB0043592B /* UIKit.framework */; };
 		CE9FF15D18575AEB0043592B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9FF15B18575AEB0043592B /* InfoPlist.strings */; };
 		CE9FF15F18575AEB0043592B /* GravatarImageDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FF15E18575AEB0043592B /* GravatarImageDemoTests.m */; };
-		CE9FF16D1857763F0043592B /* UIImageView+Gravatar.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FF16C1857763F0043592B /* UIImageView+Gravatar.m */; };
 		F1F63D05FE6B4905A0C4205B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A064302163AE4161A670DAB9 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +37,8 @@
 /* Begin PBXFileReference section */
 		865707E9A492463FB16397F1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A064302163AE4161A670DAB9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE458F88193011C300CE013A /* RFGravatarImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFGravatarImageView.h; sourceTree = "<group>"; };
+		CE458F89193011C300CE013A /* RFGravatarImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFGravatarImageView.m; sourceTree = "<group>"; };
 		CE9FF13018575AEB0043592B /* GravatarImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GravatarImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9FF13318575AEB0043592B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE9FF13518575AEB0043592B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,8 +57,6 @@
 		CE9FF15A18575AEB0043592B /* GravatarImageDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GravatarImageDemoTests-Info.plist"; sourceTree = "<group>"; };
 		CE9FF15C18575AEB0043592B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE9FF15E18575AEB0043592B /* GravatarImageDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GravatarImageDemoTests.m; sourceTree = "<group>"; };
-		CE9FF16B1857763F0043592B /* UIImageView+Gravatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+Gravatar.h"; path = "../../UIImageView+Gravatar/UIImageView+Gravatar.h"; sourceTree = "<group>"; };
-		CE9FF16C1857763F0043592B /* UIImageView+Gravatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+Gravatar.m"; path = "../../UIImageView+Gravatar/UIImageView+Gravatar.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +84,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE458F87193011C300CE013A /* RFGravatarImageView */ = {
+			isa = PBXGroup;
+			children = (
+				CE458F88193011C300CE013A /* RFGravatarImageView.h */,
+				CE458F89193011C300CE013A /* RFGravatarImageView.m */,
+			);
+			name = RFGravatarImageView;
+			path = ../../RFGravatarImageView;
+			sourceTree = "<group>";
+		};
 		CE9FF12718575AEB0043592B = {
 			isa = PBXGroup;
 			children = (
@@ -123,8 +133,8 @@
 				CE9FF14318575AEB0043592B /* AppDelegate.m */,
 				CE9FF14818575AEB0043592B /* ViewController.h */,
 				CE9FF14918575AEB0043592B /* ViewController.m */,
-				CE9FF1711857765B0043592B /* UIImageView+Gravatar */,
 				CE9FF14B18575AEB0043592B /* Images.xcassets */,
+				CE458F87193011C300CE013A /* RFGravatarImageView */,
 				CE9FF13A18575AEB0043592B /* Supporting Files */,
 			);
 			path = GravatarImageDemo;
@@ -157,15 +167,6 @@
 				CE9FF15B18575AEB0043592B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CE9FF1711857765B0043592B /* UIImageView+Gravatar */ = {
-			isa = PBXGroup;
-			children = (
-				CE9FF16B1857763F0043592B /* UIImageView+Gravatar.h */,
-				CE9FF16C1857763F0043592B /* UIImageView+Gravatar.m */,
-			);
-			name = "UIImageView+Gravatar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,7 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9FF16D1857763F0043592B /* UIImageView+Gravatar.m in Sources */,
+				CE458F8A193011C300CE013A /* RFGravatarImageView.m in Sources */,
 				CE9FF14A18575AEB0043592B /* ViewController.m in Sources */,
 				CE9FF14418575AEB0043592B /* AppDelegate.m in Sources */,
 				CE9FF14018575AEB0043592B /* main.m in Sources */,

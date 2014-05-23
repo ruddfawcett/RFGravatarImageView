@@ -1,5 +1,5 @@
 //
-//  UIImageView+Gravatar.h
+//  RFGravatarImageView.h
 //
 //  Created by Rudd Fawcett on 12/10/13.
 //  Copyright (c) 2013 Rudd Fawcett. All rights reserved.
@@ -32,7 +32,7 @@ enum {
 };
 typedef NSUInteger DefaultGravatars;
 
-@interface UIImageView_Gravatar : UIImageView
+@interface RFGravatarImageView : UIImageView
 
 // I suppose you could use an NSDictionary for this, but I was lazy - feel free to add.
 

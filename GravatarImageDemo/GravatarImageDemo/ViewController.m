@@ -10,7 +10,7 @@
 
 @interface ViewController ()
 
-@property (strong,nonatomic) UIImageView_Gravatar *imageView;
+@property (strong,nonatomic) RFGravatarImageView *imageView;
 
 @end
 
@@ -20,9 +20,9 @@
 {
     [super viewDidLoad];
 	
-    self.title = @"UIImageView+Gravatar";
+    self.title = @"RFGravatarImageView";
     
-    _imageView = [[UIImageView_Gravatar alloc] initWithFrame:self.view.bounds];
+    _imageView = [[RFGravatarImageView alloc] initWithFrame:self.view.bounds];
     [_imageView setEmail:@"fakeEmailAddress@fakeEmailURL.com"];
     [_imageView forceDefault:YES withDefaultGravatar:DefaultGravatarMysteryMan];
     [_imageView setSize:1024];

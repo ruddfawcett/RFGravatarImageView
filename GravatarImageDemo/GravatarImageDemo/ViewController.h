@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIImageView+Gravatar.h"
+#import "RFGravatarImageView.h"
 
 @interface ViewController : UIViewController
 
