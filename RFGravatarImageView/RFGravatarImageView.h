@@ -12,6 +12,7 @@
 // Rating of Gravatar
 
 enum {
+    GravatarRatingAny,
     GravatarRatingG,
     GravatarRatingPG,
     GravatarRatingR,
@@ -22,6 +23,7 @@ typedef NSUInteger GravatarRatings;
 // Default Gravatar types: http://bit.ly/1cCmtdb
 
 enum {
+    DefaultGravatarNone,
     DefaultGravatar404,
     DefaultGravatarMysteryMan,
     DefaultGravatarIdenticon,
