@@ -1,523 +1,1135 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		CE458F8A193011C300CE013A /* RFGravatarImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE458F89193011C300CE013A /* RFGravatarImageView.m */; };
-		CE9FF13418575AEB0043592B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FF13318575AEB0043592B /* Foundation.framework */; };
-		CE9FF13618575AEB0043592B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FF13518575AEB0043592B /* CoreGraphics.framework */; };
-		CE9FF13818575AEB0043592B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FF13718575AEB0043592B /* UIKit.framework */; };
-		CE9FF13E18575AEB0043592B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9FF13C18575AEB0043592B /* InfoPlist.strings */; };
-		CE9FF14018575AEB0043592B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FF13F18575AEB0043592B /* main.m */; };
-		CE9FF14418575AEB0043592B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FF14318575AEB0043592B /* AppDelegate.m */; };
-		CE9FF14A18575AEB0043592B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FF14918575AEB0043592B /* ViewController.m */; };
-		CE9FF14C18575AEB0043592B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9FF14B18575AEB0043592B /* Images.xcassets */; };
-		CE9FF15318575AEB0043592B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FF15218575AEB0043592B /* XCTest.framework */; };
-		CE9FF15418575AEB0043592B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FF13318575AEB0043592B /* Foundation.framework */; };
-		CE9FF15518575AEB0043592B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9FF13718575AEB0043592B /* UIKit.framework */; };
-		CE9FF15D18575AEB0043592B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9FF15B18575AEB0043592B /* InfoPlist.strings */; };
-		CE9FF15F18575AEB0043592B /* GravatarImageDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FF15E18575AEB0043592B /* GravatarImageDemoTests.m */; };
-		F1F63D05FE6B4905A0C4205B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A064302163AE4161A670DAB9 /* libPods.a */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CE9FF15618575AEB0043592B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CE9FF12818575AEB0043592B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CE9FF12F18575AEB0043592B;
-			remoteInfo = GravatarImageDemo;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		865707E9A492463FB16397F1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		A064302163AE4161A670DAB9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE458F88193011C300CE013A /* RFGravatarImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFGravatarImageView.h; sourceTree = "<group>"; };
-		CE458F89193011C300CE013A /* RFGravatarImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFGravatarImageView.m; sourceTree = "<group>"; };
-		CE9FF13018575AEB0043592B /* GravatarImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GravatarImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE9FF13318575AEB0043592B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CE9FF13518575AEB0043592B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CE9FF13718575AEB0043592B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		CE9FF13B18575AEB0043592B /* GravatarImageDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GravatarImageDemo-Info.plist"; sourceTree = "<group>"; };
-		CE9FF13D18575AEB0043592B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CE9FF13F18575AEB0043592B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE9FF14118575AEB0043592B /* GravatarImageDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GravatarImageDemo-Prefix.pch"; sourceTree = "<group>"; };
-		CE9FF14218575AEB0043592B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CE9FF14318575AEB0043592B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CE9FF14818575AEB0043592B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CE9FF14918575AEB0043592B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CE9FF14B18575AEB0043592B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		CE9FF15118575AEB0043592B /* GravatarImageDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GravatarImageDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE9FF15218575AEB0043592B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		CE9FF15A18575AEB0043592B /* GravatarImageDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GravatarImageDemoTests-Info.plist"; sourceTree = "<group>"; };
-		CE9FF15C18575AEB0043592B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CE9FF15E18575AEB0043592B /* GravatarImageDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GravatarImageDemoTests.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		CE9FF12D18575AEB0043592B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE9FF13618575AEB0043592B /* CoreGraphics.framework in Frameworks */,
-				CE9FF13818575AEB0043592B /* UIKit.framework in Frameworks */,
-				CE9FF13418575AEB0043592B /* Foundation.framework in Frameworks */,
-				F1F63D05FE6B4905A0C4205B /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE9FF14E18575AEB0043592B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE9FF15318575AEB0043592B /* XCTest.framework in Frameworks */,
-				CE9FF15518575AEB0043592B /* UIKit.framework in Frameworks */,
-				CE9FF15418575AEB0043592B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		CE458F87193011C300CE013A /* RFGravatarImageView */ = {
-			isa = PBXGroup;
-			children = (
-				CE458F88193011C300CE013A /* RFGravatarImageView.h */,
-				CE458F89193011C300CE013A /* RFGravatarImageView.m */,
-			);
-			name = RFGravatarImageView;
-			path = ../../RFGravatarImageView;
-			sourceTree = "<group>";
-		};
-		CE9FF12718575AEB0043592B = {
-			isa = PBXGroup;
-			children = (
-				CE9FF13918575AEB0043592B /* GravatarImageDemo */,
-				CE9FF15818575AEB0043592B /* GravatarImageDemoTests */,
-				CE9FF13218575AEB0043592B /* Frameworks */,
-				CE9FF13118575AEB0043592B /* Products */,
-				865707E9A492463FB16397F1 /* Pods.xcconfig */,
-			);
-			sourceTree = "<group>";
-		};
-		CE9FF13118575AEB0043592B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CE9FF13018575AEB0043592B /* GravatarImageDemo.app */,
-				CE9FF15118575AEB0043592B /* GravatarImageDemoTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CE9FF13218575AEB0043592B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CE9FF13318575AEB0043592B /* Foundation.framework */,
-				CE9FF13518575AEB0043592B /* CoreGraphics.framework */,
-				CE9FF13718575AEB0043592B /* UIKit.framework */,
-				CE9FF15218575AEB0043592B /* XCTest.framework */,
-				A064302163AE4161A670DAB9 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CE9FF13918575AEB0043592B /* GravatarImageDemo */ = {
-			isa = PBXGroup;
-			children = (
-				CE9FF14218575AEB0043592B /* AppDelegate.h */,
-				CE9FF14318575AEB0043592B /* AppDelegate.m */,
-				CE9FF14818575AEB0043592B /* ViewController.h */,
-				CE9FF14918575AEB0043592B /* ViewController.m */,
-				CE9FF14B18575AEB0043592B /* Images.xcassets */,
-				CE458F87193011C300CE013A /* RFGravatarImageView */,
-				CE9FF13A18575AEB0043592B /* Supporting Files */,
-			);
-			path = GravatarImageDemo;
-			sourceTree = "<group>";
-		};
-		CE9FF13A18575AEB0043592B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CE9FF13B18575AEB0043592B /* GravatarImageDemo-Info.plist */,
-				CE9FF13C18575AEB0043592B /* InfoPlist.strings */,
-				CE9FF13F18575AEB0043592B /* main.m */,
-				CE9FF14118575AEB0043592B /* GravatarImageDemo-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CE9FF15818575AEB0043592B /* GravatarImageDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				CE9FF15E18575AEB0043592B /* GravatarImageDemoTests.m */,
-				CE9FF15918575AEB0043592B /* Supporting Files */,
-			);
-			path = GravatarImageDemoTests;
-			sourceTree = "<group>";
-		};
-		CE9FF15918575AEB0043592B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CE9FF15A18575AEB0043592B /* GravatarImageDemoTests-Info.plist */,
-				CE9FF15B18575AEB0043592B /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		CE9FF12F18575AEB0043592B /* GravatarImageDemo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE9FF16218575AEB0043592B /* Build configuration list for PBXNativeTarget "GravatarImageDemo" */;
-			buildPhases = (
-				829BB0D9B8BF40E7B64E02AB /* Check Pods Manifest.lock */,
-				CE9FF12C18575AEB0043592B /* Sources */,
-				CE9FF12D18575AEB0043592B /* Frameworks */,
-				CE9FF12E18575AEB0043592B /* Resources */,
-				7258B25FEE094DB6B74DB098 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GravatarImageDemo;
-			productName = GravatarImageDemo;
-			productReference = CE9FF13018575AEB0043592B /* GravatarImageDemo.app */;
-			productType = "com.apple.product-type.application";
-		};
-		CE9FF15018575AEB0043592B /* GravatarImageDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE9FF16518575AEB0043592B /* Build configuration list for PBXNativeTarget "GravatarImageDemoTests" */;
-			buildPhases = (
-				CE9FF14D18575AEB0043592B /* Sources */,
-				CE9FF14E18575AEB0043592B /* Frameworks */,
-				CE9FF14F18575AEB0043592B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CE9FF15718575AEB0043592B /* PBXTargetDependency */,
-			);
-			name = GravatarImageDemoTests;
-			productName = GravatarImageDemoTests;
-			productReference = CE9FF15118575AEB0043592B /* GravatarImageDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		CE9FF12818575AEB0043592B /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Rex Finn";
-				TargetAttributes = {
-					CE9FF15018575AEB0043592B = {
-						TestTargetID = CE9FF12F18575AEB0043592B;
-					};
-				};
-			};
-			buildConfigurationList = CE9FF12B18575AEB0043592B /* Build configuration list for PBXProject "GravatarImageDemo" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = CE9FF12718575AEB0043592B;
-			productRefGroup = CE9FF13118575AEB0043592B /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				CE9FF12F18575AEB0043592B /* GravatarImageDemo */,
-				CE9FF15018575AEB0043592B /* GravatarImageDemoTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		CE9FF12E18575AEB0043592B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE9FF14C18575AEB0043592B /* Images.xcassets in Resources */,
-				CE9FF13E18575AEB0043592B /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE9FF14F18575AEB0043592B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE9FF15D18575AEB0043592B /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7258B25FEE094DB6B74DB098 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		829BB0D9B8BF40E7B64E02AB /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		CE9FF12C18575AEB0043592B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE458F8A193011C300CE013A /* RFGravatarImageView.m in Sources */,
-				CE9FF14A18575AEB0043592B /* ViewController.m in Sources */,
-				CE9FF14418575AEB0043592B /* AppDelegate.m in Sources */,
-				CE9FF14018575AEB0043592B /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE9FF14D18575AEB0043592B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE9FF15F18575AEB0043592B /* GravatarImageDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CE9FF15718575AEB0043592B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CE9FF12F18575AEB0043592B /* GravatarImageDemo */;
-			targetProxy = CE9FF15618575AEB0043592B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CE9FF13C18575AEB0043592B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE9FF13D18575AEB0043592B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		CE9FF15B18575AEB0043592B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE9FF15C18575AEB0043592B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		CE9FF16018575AEB0043592B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		CE9FF16118575AEB0043592B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CE9FF16318575AEB0043592B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 865707E9A492463FB16397F1 /* Pods.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GravatarImageDemo/GravatarImageDemo-Prefix.pch";
-				INFOPLIST_FILE = "GravatarImageDemo/GravatarImageDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		CE9FF16418575AEB0043592B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 865707E9A492463FB16397F1 /* Pods.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GravatarImageDemo/GravatarImageDemo-Prefix.pch";
-				INFOPLIST_FILE = "GravatarImageDemo/GravatarImageDemo-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		CE9FF16618575AEB0043592B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GravatarImageDemo.app/GravatarImageDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GravatarImageDemo/GravatarImageDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "GravatarImageDemoTests/GravatarImageDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		CE9FF16718575AEB0043592B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GravatarImageDemo.app/GravatarImageDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GravatarImageDemo/GravatarImageDemo-Prefix.pch";
-				INFOPLIST_FILE = "GravatarImageDemoTests/GravatarImageDemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		CE9FF12B18575AEB0043592B /* Build configuration list for PBXProject "GravatarImageDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE9FF16018575AEB0043592B /* Debug */,
-				CE9FF16118575AEB0043592B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE9FF16218575AEB0043592B /* Build configuration list for PBXNativeTarget "GravatarImageDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE9FF16318575AEB0043592B /* Debug */,
-				CE9FF16418575AEB0043592B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE9FF16518575AEB0043592B /* Build configuration list for PBXNativeTarget "GravatarImageDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE9FF16618575AEB0043592B /* Debug */,
-				CE9FF16718575AEB0043592B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = CE9FF12818575AEB0043592B /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1DE018239C57A63E8A08183E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B2831B16E4ADFA977F021A84</string>
+				<string>1FE989FA660B622860B0285D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1FE989FA660B622860B0285D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7258B25FEE094DB6B74DB098</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>829BB0D9B8BF40E7B64E02AB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>A064302163AE4161A670DAB9</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B2831B16E4ADFA977F021A84</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE458F87193011C300CE013A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE458F88193011C300CE013A</string>
+				<string>CE458F89193011C300CE013A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>RFGravatarImageView</string>
+			<key>path</key>
+			<string>../../RFGravatarImageView</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE458F88193011C300CE013A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RFGravatarImageView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE458F89193011C300CE013A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RFGravatarImageView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE458F8A193011C300CE013A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE458F89193011C300CE013A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE9FF12718575AEB0043592B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE9FF13918575AEB0043592B</string>
+				<string>CE9FF15818575AEB0043592B</string>
+				<string>CE9FF13218575AEB0043592B</string>
+				<string>CE9FF13118575AEB0043592B</string>
+				<string>1DE018239C57A63E8A08183E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF12818575AEB0043592B</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0500</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Rex Finn</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>CE9FF15018575AEB0043592B</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>CE9FF12F18575AEB0043592B</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>CE9FF12B18575AEB0043592B</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>CE9FF12718575AEB0043592B</string>
+			<key>productRefGroup</key>
+			<string>CE9FF13118575AEB0043592B</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>CE9FF12F18575AEB0043592B</string>
+				<string>CE9FF15018575AEB0043592B</string>
+			</array>
+		</dict>
+		<key>CE9FF12B18575AEB0043592B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CE9FF16018575AEB0043592B</string>
+				<string>CE9FF16118575AEB0043592B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CE9FF12C18575AEB0043592B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CE458F8A193011C300CE013A</string>
+				<string>CE9FF14A18575AEB0043592B</string>
+				<string>CE9FF14418575AEB0043592B</string>
+				<string>CE9FF14018575AEB0043592B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CE9FF12D18575AEB0043592B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CE9FF13618575AEB0043592B</string>
+				<string>CE9FF13818575AEB0043592B</string>
+				<string>CE9FF13418575AEB0043592B</string>
+				<string>F1F63D05FE6B4905A0C4205B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CE9FF12E18575AEB0043592B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CE9FF14C18575AEB0043592B</string>
+				<string>CE9FF13E18575AEB0043592B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CE9FF12F18575AEB0043592B</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>CE9FF16218575AEB0043592B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>829BB0D9B8BF40E7B64E02AB</string>
+				<string>CE9FF12C18575AEB0043592B</string>
+				<string>CE9FF12D18575AEB0043592B</string>
+				<string>CE9FF12E18575AEB0043592B</string>
+				<string>7258B25FEE094DB6B74DB098</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>GravatarImageDemo</string>
+			<key>productName</key>
+			<string>GravatarImageDemo</string>
+			<key>productReference</key>
+			<string>CE9FF13018575AEB0043592B</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>CE9FF13018575AEB0043592B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>GravatarImageDemo.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CE9FF13118575AEB0043592B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE9FF13018575AEB0043592B</string>
+				<string>CE9FF15118575AEB0043592B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF13218575AEB0043592B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE9FF13318575AEB0043592B</string>
+				<string>CE9FF13518575AEB0043592B</string>
+				<string>CE9FF13718575AEB0043592B</string>
+				<string>CE9FF15218575AEB0043592B</string>
+				<string>A064302163AE4161A670DAB9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF13318575AEB0043592B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>CE9FF13418575AEB0043592B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE9FF13318575AEB0043592B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE9FF13518575AEB0043592B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>CE9FF13618575AEB0043592B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE9FF13518575AEB0043592B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE9FF13718575AEB0043592B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>CE9FF13818575AEB0043592B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE9FF13718575AEB0043592B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE9FF13918575AEB0043592B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE9FF14218575AEB0043592B</string>
+				<string>CE9FF14318575AEB0043592B</string>
+				<string>CE9FF14818575AEB0043592B</string>
+				<string>CE9FF14918575AEB0043592B</string>
+				<string>CE9FF14B18575AEB0043592B</string>
+				<string>CE458F87193011C300CE013A</string>
+				<string>CE9FF13A18575AEB0043592B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>GravatarImageDemo</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF13A18575AEB0043592B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE9FF13B18575AEB0043592B</string>
+				<string>CE9FF13C18575AEB0043592B</string>
+				<string>CE9FF13F18575AEB0043592B</string>
+				<string>CE9FF14118575AEB0043592B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF13B18575AEB0043592B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>GravatarImageDemo-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF13C18575AEB0043592B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE9FF13D18575AEB0043592B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF13D18575AEB0043592B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF13E18575AEB0043592B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE9FF13C18575AEB0043592B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE9FF13F18575AEB0043592B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF14018575AEB0043592B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE9FF13F18575AEB0043592B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE9FF14118575AEB0043592B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>GravatarImageDemo-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF14218575AEB0043592B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF14318575AEB0043592B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF14418575AEB0043592B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE9FF14318575AEB0043592B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE9FF14818575AEB0043592B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF14918575AEB0043592B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF14A18575AEB0043592B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE9FF14918575AEB0043592B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE9FF14B18575AEB0043592B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF14C18575AEB0043592B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE9FF14B18575AEB0043592B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE9FF14D18575AEB0043592B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CE9FF15F18575AEB0043592B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CE9FF14E18575AEB0043592B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CE9FF15318575AEB0043592B</string>
+				<string>CE9FF15518575AEB0043592B</string>
+				<string>CE9FF15418575AEB0043592B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CE9FF14F18575AEB0043592B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>CE9FF15D18575AEB0043592B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>CE9FF15018575AEB0043592B</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>CE9FF16518575AEB0043592B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>CE9FF14D18575AEB0043592B</string>
+				<string>CE9FF14E18575AEB0043592B</string>
+				<string>CE9FF14F18575AEB0043592B</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>CE9FF15718575AEB0043592B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>GravatarImageDemoTests</string>
+			<key>productName</key>
+			<string>GravatarImageDemoTests</string>
+			<key>productReference</key>
+			<string>CE9FF15118575AEB0043592B</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>CE9FF15118575AEB0043592B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>GravatarImageDemoTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>CE9FF15218575AEB0043592B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>CE9FF15318575AEB0043592B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE9FF15218575AEB0043592B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE9FF15418575AEB0043592B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE9FF13318575AEB0043592B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE9FF15518575AEB0043592B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE9FF13718575AEB0043592B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE9FF15618575AEB0043592B</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>CE9FF12818575AEB0043592B</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>CE9FF12F18575AEB0043592B</string>
+			<key>remoteInfo</key>
+			<string>GravatarImageDemo</string>
+		</dict>
+		<key>CE9FF15718575AEB0043592B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>CE9FF12F18575AEB0043592B</string>
+			<key>targetProxy</key>
+			<string>CE9FF15618575AEB0043592B</string>
+		</dict>
+		<key>CE9FF15818575AEB0043592B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE9FF15E18575AEB0043592B</string>
+				<string>CE9FF15918575AEB0043592B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>GravatarImageDemoTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF15918575AEB0043592B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE9FF15A18575AEB0043592B</string>
+				<string>CE9FF15B18575AEB0043592B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF15A18575AEB0043592B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>GravatarImageDemoTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF15B18575AEB0043592B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CE9FF15C18575AEB0043592B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF15C18575AEB0043592B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF15D18575AEB0043592B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE9FF15B18575AEB0043592B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE9FF15E18575AEB0043592B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>GravatarImageDemoTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE9FF15F18575AEB0043592B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CE9FF15E18575AEB0043592B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CE9FF16018575AEB0043592B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CE9FF16118575AEB0043592B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>CE9FF16218575AEB0043592B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CE9FF16318575AEB0043592B</string>
+				<string>CE9FF16418575AEB0043592B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CE9FF16318575AEB0043592B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B2831B16E4ADFA977F021A84</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>GravatarImageDemo/GravatarImageDemo-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>GravatarImageDemo/GravatarImageDemo-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CE9FF16418575AEB0043592B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1FE989FA660B622860B0285D</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>GravatarImageDemo/GravatarImageDemo-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>GravatarImageDemo/GravatarImageDemo-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>CE9FF16518575AEB0043592B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CE9FF16618575AEB0043592B</string>
+				<string>CE9FF16718575AEB0043592B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>CE9FF16618575AEB0043592B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/GravatarImageDemo.app/GravatarImageDemo</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>GravatarImageDemo/GravatarImageDemo-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>GravatarImageDemoTests/GravatarImageDemoTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CE9FF16718575AEB0043592B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/GravatarImageDemo.app/GravatarImageDemo</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>GravatarImageDemo/GravatarImageDemo-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>GravatarImageDemoTests/GravatarImageDemoTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>F1F63D05FE6B4905A0C4205B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A064302163AE4161A670DAB9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>CE9FF12818575AEB0043592B</string>
+</dict>
+</plist>
