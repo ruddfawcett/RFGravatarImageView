@@ -1,9 +1,24 @@
+// RFGravatarImageView.m
 //
-//  RFGravatarImageView.m
+// Copyright (c) 2013-2015 Rudd Fawcett (http://ruddfawcett.com)
 //
-//  Created by Rudd Fawcett on 12/10/13.
-//  Copyright (c) 2013 Rudd Fawcett. All rights reserved.
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
 //
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
 
 #import "RFGravatarImageView.h"
 
@@ -13,19 +28,15 @@
 
 @implementation RFGravatarImageView
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
+- (id)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
         self.contentMode = UIViewContentModeScaleAspectFit;
     }
     return self;
 }
 
-- (id)initWithFrame:(CGRect)frame andPlaceholder:(UIImage*)placeholder
-{
-    self = [super initWithFrame:frame];
-    if (self) {
+- (id)initWithFrame:(CGRect)frame andPlaceholder:(UIImage *)placeholder {
+    if (self = [super initWithFrame:frame]) {
         [self setPlaceholder:placeholder];
         self.contentMode = UIViewContentModeScaleAspectFit;
     }
@@ -38,61 +49,62 @@
 }
 
 - (void)loadGravatar {
-    [self setImageWithURL:[self gravatarURL:_email] placeholderImage:_placeholder completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
-        if (!error) {
-            NSLog(@"[%@] Reached Gravatar Image for %@ at %@.\nNote: this does not mean that this email has a gravatar associated with it.",[self class],_email,[self gravatarURL:_email]);
-        }
-        else {
-            NSLog(@"[%@] Unable to reach Gravatar Image for %@ at %@.",[self class],_email,[self gravatarURL:_email]);
-        }
+    [self load];
+}
+
+- (void)load {
+    [self sd_setImageWithURL:[self gravatarURL:_email] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
     }];
 }
 
-- (void)loadGravatar:(void (^)(void))completed {
-    [self setImageWithURL:[self gravatarURL:_email] placeholderImage:_placeholder completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
-        completed();
-        
-        if (!error) {
-            NSLog(@"[%@] Reached Gravatar Image for %@ at %@.\nNote: this does not mean that this email has a gravatar associated with it.",[self class],_email,[self gravatarURL:_email]);
-        }
-        else {
-            NSLog(@"[%@] Unable to reach Gravatar Image for %@ at %@.",[self class],_email,[self gravatarURL:_email]);
-        }
+- (void)loadGravatar:(void (^)(void))success {
+    [self sd_setImageWithURL:[self gravatarURL:_email] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        success();
+    }];
+}
+
+- (void)load:(void (^)(NSError *error))completion {
+    [self sd_setImageWithURL:[self gravatarURL:_email] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        completion(error);
     }];
 }
 
 - (void)refreshGravatar {
-    [self loadGravatar];
+    [self refresh];
 }
 
-- (NSURL*)gravatarURL:(NSString*)email {
+- (void)refresh {
+    [self load];
+}
+
+- (NSURL *)gravatarURL:(NSString *)email {
     NSMutableString *gravatarPath = [NSMutableString stringWithFormat:@"http://gravatar.com/avatar/%@?", [self createMD5:email]];
     
     return [NSURL URLWithString:[self buildLink:gravatarPath]];
 }
 
-- (void)forceDefault:(BOOL)forceDefault withDefaultGravatar:(DefaultGravatars)gravatar {
+- (void)forceDefault:(BOOL)forceDefault withDefaultGravatar:(RFDefaultGravatar)gravatar {
     _forceDefault = forceDefault;
     _defaultGravatar = gravatar;
 }
 
-- (NSMutableString*)buildLink:(NSMutableString*)baseLink {
+- (NSMutableString *)buildLink:(NSMutableString *)baseLink {
     if (_size) {
-        [baseLink appendString:[NSString stringWithFormat:@"&size=%d",_size]];
+        [baseLink appendString:[NSString stringWithFormat:@"&size=%lu",_size]];
     }
     
     if (_rating) {
         switch (_rating) {
-            case GravatarRatingG:
+            case RFGravatarRatingG:
                 [baseLink appendString:@"&rating=g"];
                 break;
-            case GravatarRatingPG:
+            case RFGravatarRatingPG:
                 [baseLink appendString:@"&rating=pg"];
                 break;
-            case GravatarRatingR:
+            case RFGravatarRatingR:
                 [baseLink appendString:@"&rating=r"];
                 break;
-            case GravatarRatingX:
+            case RFGravatarRatingX:
                 [baseLink appendString:@"&rating=x"];
                 break;
                 
@@ -103,25 +115,25 @@
     
     if (_defaultGravatar) {
         switch (_defaultGravatar) {
-            case DefaultGravatar404:
+            case RFDefaultGravatar404:
                 [baseLink appendString:@"&default=404"];
                 break;
-            case DefaultGravatarMysteryMan:
+            case RFDefaultGravatarMysteryMan:
                 [baseLink appendString:@"&default=mm"];
                 break;
-            case DefaultGravatarIdenticon:
+            case RFDefaultGravatarIdenticon:
                 [baseLink appendString:@"&default=identicon"];
                 break;
-            case DefaultGravatarMonsterID:
+            case RFDefaultGravatarMonsterID:
                 [baseLink appendString:@"&default=monsterid"];
                 break;
-            case DefaultGravatarWavatar:
+            case RFDefaultGravatarWavatar:
                 [baseLink appendString:@"&default=wavatar"];
                 break;
-            case DefaultGravatarRetro:
+            case RFDefaultGravatarRetro:
                 [baseLink appendString:@"&default=retro"];
                 break;
-            case DefaultGravatarBlank:
+            case RFDefaultGravatarBlank:
                 [baseLink appendString:@"&default=blank"];
                 break;
                 
@@ -137,11 +149,11 @@
     return baseLink;
 }
 
-- (NSString*)createMD5:(NSString *)email {
+- (NSString *)createMD5:(NSString *)email {
     const char *cStr = [_email UTF8String];
     unsigned char digest[16];
     
-    CC_MD5(cStr, strlen(cStr), digest);
+    CC_MD5(cStr, (int)strlen(cStr), digest);
     
     NSMutableString *emailMD5 = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
     
