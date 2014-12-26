@@ -39,7 +39,7 @@
 - (void)tapToLoad {
     _imageView.email = @"rudd.fawcett@gmail.com";
     _imageView.forceDefault = NO;
-    [_imageView refreshGravatar];
+    [_imageView refresh];
 }
 
 - (void)didReceiveMemoryWarning {
