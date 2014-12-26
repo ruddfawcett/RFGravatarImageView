@@ -16,20 +16,20 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	
     self.title = @"RFGravatarImageView";
     
     _imageView = [[RFGravatarImageView alloc] initWithFrame:self.view.bounds];
-    [_imageView setEmail:@"fakeEmailAddress@fakeEmailURL.com"];
-    [_imageView forceDefault:YES withDefaultGravatar:DefaultGravatarMysteryMan];
-    [_imageView setSize:1024];
+    _imageView.email = @"test@test.com";
+    _imageView.forceDefault = YES;
+    _imageView.defaultGravatar = RFDefaultGravatarMysteryMan;
+    _imageView.size = 1024;
     
     [self.view addSubview:_imageView];
     
-    [_imageView loadGravatar];
+    [_imageView load];
     
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapToLoad)];
     
@@ -37,13 +37,12 @@
 }
 
 - (void)tapToLoad {
-    [_imageView setEmail:@"rexcfinn@gmail.com"];
-    [_imageView setForceDefault:NO];
+    _imageView.email = @"rudd.fawcett@gmail.com";
+    _imageView.forceDefault = NO;
     [_imageView refreshGravatar];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
