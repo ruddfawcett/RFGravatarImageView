@@ -1,4 +1,4 @@
-RFGravatarImageView
+RFGravatarImageView<br /> [![RFGravatarImageView Version](http://img.shields.io/cocoapods/v/RFGravatarImageView.svg?style=flat)](http://cocoadocs.org/docsets/RFGravatarImageView/1.1/) ![License MIT](http://img.shields.io/badge/license-MIT-orange.svg?style=flat) ![reposs](https://reposs.herokuapp.com/?path=ruddfawcett/RFGravatarImageView&style=flat)
 ====================
 
 A simple UIImageView subclass for dealing with http://gravatar.com images.
@@ -18,7 +18,7 @@ pod "RFGravatarImageView", "~> 1.1"
 
 ### Installation without CocoaPods
 
-Just drag the RFGravatarImageView folder into your project and import it.  You'll also have to download SDWebImage, which you can grab here: [SDWebImage repository](https://github.com/rs/SDWebImage).
+Just drag the `RFGravatarImageView` folder into your project and import it.  You'll also have to download [SDWebImage](https://github.com/rs/SDWebImage).
 
 ```obj-c
 #import 'RFGravatarImageView.h'
@@ -44,29 +44,6 @@ See [RFGravatarImageView.h](RFGravatarImageView/RFGravatarImageView.h) to view e
 
 Hope you enjoy it!  Please Fork and send Pull Requests!
 
-##Screenshots
-
-![RFGravatarImageView](http://i.imgur.com/yCvcY4M.pngg)
-
 ##License
 
-The MIT License (MIT)
-
-Copyright (c) 2015 Rudd Fawcett
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+RFGravatarImageView is available under the MIT license. See the LICENSE file for more info.
