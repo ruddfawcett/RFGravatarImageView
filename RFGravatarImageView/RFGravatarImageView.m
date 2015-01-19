@@ -53,8 +53,15 @@
 }
 
 - (void)load {
-    [self sd_setImageWithURL:[self gravatarURL:_email] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-    }];
+    if (self.placeholder) {
+        [self sd_setImageWithURL:[self gravatarURL:_email] placeholderImage:self.placeholder completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+            
+        }];
+    } else {
+        [self sd_setImageWithURL:[self gravatarURL:_email] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        }];
+    }
+
 }
 
 - (void)loadGravatar:(void (^)(void))success {
