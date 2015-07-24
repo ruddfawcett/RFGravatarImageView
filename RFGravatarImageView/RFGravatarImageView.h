@@ -21,7 +21,6 @@
 // THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
-#import <CommonCrypto/CommonDigest.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <AvailabilityMacros.h>
 
