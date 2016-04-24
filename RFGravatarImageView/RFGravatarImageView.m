@@ -86,7 +86,7 @@
 }
 
 - (NSURL *)gravatarURL:(NSString *)email {
-    NSMutableString *gravatarPath = [NSMutableString stringWithFormat:@"http://gravatar.com/avatar/%@?", [self createMD5:email]];
+    NSMutableString *gravatarPath = [NSMutableString stringWithFormat:@"https://secure.gravatar.com/avatar/%@?", [self createMD5:email]];
     
     return [NSURL URLWithString:[self buildLink:gravatarPath]];
 }
