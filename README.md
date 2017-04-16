@@ -3,7 +3,7 @@ RFGravatarImageView<br /> [![RFGravatarImageView Version](http://img.shields.io/
 
 A simple UIImageView subclass for dealing with http://gravatar.com images.
 
-##Installation
+## Installation
 
 ### Installation with CocoaPods
 
@@ -44,6 +44,6 @@ See [RFGravatarImageView.h](RFGravatarImageView/RFGravatarImageView.h) to view e
 
 Hope you enjoy it!  Please Fork and send Pull Requests!
 
-##License
+## License
 
 RFGravatarImageView is available under the MIT license. See the LICENSE file for more info.
